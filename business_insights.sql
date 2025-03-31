@@ -18,6 +18,23 @@ CREATE TABLE Employees (
 	LastName VARCHAR(50),
 	Salary DECIMAL(10,2),
 	DepartmentID INT
+    FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
+);
+
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(50),
+    CategoryID INT,
+    Price DECIMAL(10,2)
+);
+
+CREATE TABLE OrderDetails (
+    OrderDetailID INT PRIMARY KEY,
+    OrderID INT,
+    ProductID INT,
+    Quantity INT,
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
 CREATE TABLE Departments (
