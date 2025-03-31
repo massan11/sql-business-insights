@@ -21,6 +21,7 @@ sql-business-insights/
 │── reports/ 
 │     ├── customer_insights.csv 
 │     ├── sales_trends.csv
+├── sample_data.sql
 ```
 
 ##  How to Use
