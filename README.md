@@ -14,13 +14,14 @@ sql-business-insights/
 │── README.md 
 │── business_insights.sql 
 │── queries/ 
-│ ├── high_value_customers.sql 
-│ ├── top_selling_products.sql 
-│ ├── customer_without_orders.sql 
-│ ├── highest_paid_employee.sql 
+│     ├── high_value_customers.sql 
+│     ├── top_selling_products.sql 
+│     ├── customer_without_orders.sql 
+│     ├── highest_paid_employee.sql 
 │── reports/ 
-│ ├── customer_insights.csv 
-│ ├── sales_trends.csv
+│     ├── customer_insights.csv 
+│     ├── sales_trends.csv
+├── sample_data.sql
 ```
 
 ##  How to Use
