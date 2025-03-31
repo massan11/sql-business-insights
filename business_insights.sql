@@ -12,6 +12,11 @@ CREATE TABLE Orders (
 	FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
 
+CREATE TABLE Departments (
+	DepartmentID INT PRIMARY KEY,
+	DepartmentName VARCHAR(100)
+);
+
 CREATE TABLE Employees (
 	EmployeeID INT PRIMARY KEY,
 	FirstName VARCHAR(50),
@@ -37,7 +42,3 @@ CREATE TABLE OrderDetails (
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
 );
 
-CREATE TABLE Departments (
-	DepartmentID INT PRIMARY KEY,
-	DepartmentName VARCHAR(100)
-);
